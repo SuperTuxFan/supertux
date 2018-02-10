@@ -1,0 +1,21 @@
+(supertux-sprite
+  (action
+    (name "left")
+    (hitbox 0 7 35 20)
+    (images “rocky-left-0.png"
+            “rocky-left-1.png"
+                                  )
+  )
+  (action
+    (hitbox 0 7 35 20)
+    (name "right")
+    (mirror-action "left")
+  )
+  (action
+    (name "squished-left")
+    (images “rocky-left-0.png")
+  )
+  (action
+    (name "squished-right")
+    (mirror-action “rocky-left-0.png”)
+)
